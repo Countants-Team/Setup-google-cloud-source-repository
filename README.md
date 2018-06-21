@@ -9,16 +9,20 @@
   cd [repository-name]
 3. Enter command - git init 
 4. Use the following commands to authenticate
-  gcloud init && git config credential.helper gcloud.sh
+  ```
+  gcloud init
+  git config credential.helper gcloud.sh
+  ```
 5. create repository using following command:
   gcloud source repos create [repository-name]
 6. Add a repository as a remote:
   git remote add google \https://source.developers.google.com/p/[PROJECT_ID]/r/[CLOUD_SOURCE_REPOSITORY_NAME]
 7. Add first deployment using below commands.
+```
   git add *
   git commit -m "first deployment"
   git push google master
-
+```
 ## Cloning a repository steps
 
 1. Install Google Cloud SDK
